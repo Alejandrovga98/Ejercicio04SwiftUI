@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A93922232C4C886D00533969 /* Ejercicio04SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93922222C4C886D00533969 /* Ejercicio04SwiftUIApp.swift */; };
-		A93922252C4C886D00533969 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93922242C4C886D00533969 /* ContentView.swift */; };
 		A93922272C4C886E00533969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93922262C4C886E00533969 /* Assets.xcassets */; };
 		A939222A2C4C886E00533969 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93922292C4C886E00533969 /* Preview Assets.xcassets */; };
 		A939222C2C4C886E00533969 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939222B2C4C886E00533969 /* Persistence.swift */; };
@@ -16,6 +15,10 @@
 		A93922392C4C886E00533969 /* Ejercicio04SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93922382C4C886E00533969 /* Ejercicio04SwiftUITests.swift */; };
 		A93922432C4C886E00533969 /* Ejercicio04SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93922422C4C886E00533969 /* Ejercicio04SwiftUIUITests.swift */; };
 		A93922452C4C886E00533969 /* Ejercicio04SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93922442C4C886E00533969 /* Ejercicio04SwiftUIUITestsLaunchTests.swift */; };
+		A93922552C4C89CA00533969 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93922542C4C89CA00533969 /* DataManager.swift */; };
+		A93922582C4DC06100533969 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93922572C4DC06100533969 /* ListView.swift */; };
+		A939225C2C4DCBD400533969 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939225B2C4DCBD400533969 /* FormView.swift */; };
+		A939225E2C4DDE6500533969 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939225D2C4DDE6500533969 /* FormViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* Begin PBXFileReference section */
 		A939221F2C4C886D00533969 /* Ejercicio04SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ejercicio04SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93922222C4C886D00533969 /* Ejercicio04SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicio04SwiftUIApp.swift; sourceTree = "<group>"; };
-		A93922242C4C886D00533969 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A93922262C4C886E00533969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A93922292C4C886E00533969 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A939222B2C4C886E00533969 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +50,10 @@
 		A939223E2C4C886E00533969 /* Ejercicio04SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ejercicio04SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93922422C4C886E00533969 /* Ejercicio04SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicio04SwiftUIUITests.swift; sourceTree = "<group>"; };
 		A93922442C4C886E00533969 /* Ejercicio04SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicio04SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A93922542C4C89CA00533969 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A93922572C4DC06100533969 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A939225B2C4DCBD400533969 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		A939225D2C4DDE6500533969 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,10 @@
 		A93922212C4C886D00533969 /* Ejercicio04SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A93922562C4DC05200533969 /* View */,
+				A93922522C4C896200533969 /* ViewModel */,
+				A93922512C4C894C00533969 /* Data */,
 				A93922222C4C886D00533969 /* Ejercicio04SwiftUIApp.swift */,
-				A93922242C4C886D00533969 /* ContentView.swift */,
 				A93922262C4C886E00533969 /* Assets.xcassets */,
 				A939222B2C4C886E00533969 /* Persistence.swift */,
 				A939222D2C4C886E00533969 /* Ejercicio04SwiftUI.xcdatamodeld */,
@@ -131,6 +139,31 @@
 				A93922442C4C886E00533969 /* Ejercicio04SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = Ejercicio04SwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		A93922512C4C894C00533969 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A93922542C4C89CA00533969 /* DataManager.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		A93922522C4C896200533969 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A939225D2C4DDE6500533969 /* FormViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		A93922562C4DC05200533969 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A93922572C4DC06100533969 /* ListView.swift */,
+				A939225B2C4DCBD400533969 /* FormView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A939225C2C4DCBD400533969 /* FormView.swift in Sources */,
 				A939222C2C4C886E00533969 /* Persistence.swift in Sources */,
-				A93922252C4C886D00533969 /* ContentView.swift in Sources */,
+				A93922552C4C89CA00533969 /* DataManager.swift in Sources */,
+				A93922582C4DC06100533969 /* ListView.swift in Sources */,
+				A939225E2C4DDE6500533969 /* FormViewModel.swift in Sources */,
 				A93922232C4C886D00533969 /* Ejercicio04SwiftUIApp.swift in Sources */,
 				A939222F2C4C886E00533969 /* Ejercicio04SwiftUI.xcdatamodeld in Sources */,
 			);
