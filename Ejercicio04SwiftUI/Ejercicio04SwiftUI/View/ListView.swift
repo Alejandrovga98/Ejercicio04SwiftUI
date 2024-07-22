@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct ListView: View {
-    var prueba: [Person] = []
+    @FetchRequest(entity: Person.entity(), sortDescriptors: [NSSortDescriptor(key: "name", ascending: true)]) var results : FetchedResults<Person>
+    @Environment(\.managedObjectContext) var context
+    @StateObject private var listViewModel = ListViewModel()
     var body: some View {
         NavigationView {
             VStack{
-                if prueba.isEmpty {
+                if results.isEmpty {
                     Text("No se han encontrados Datos")
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }else{
-                    List(){
-                        
-                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                    NavigationView {
+                        List{
+                            ForEach(results){ item in
+                                NavigationLink(destination: DetailView()) {
+                                    Text(item.name ?? "Usuario Desconocido")
+                                }
+                                
+                            }.onDelete(perform: { indexSet in
+                                listViewModel.deleteItems(at: indexSet, result: results, context: context)
+                            })
+                        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                    }
                 }
                 NavigationLink(destination: FormView()) {
                     Text("Agregar Usuario")
